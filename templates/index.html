@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="POST" action="/">
+      {{ form.csrf_token }}
+      <table>
+        <tbody>
+          <tr>
+            <td>First Name:</td>
+            <td>{{ form.first_name() }}</td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td>{{ form.last_name() }}</td>
+          </tr>
+          <tr>
+            <td>Annual Salary:</td>
+            <td>{{ form.annual_salary() }}</td>
+          </tr>
+          <tr>
+            <td>Super Rate:</td>
+            <td>{{ form.super_rate() }}</td>
+          </tr>
+          <tr>
+            <td>Payment Start Date:</td>
+            <td>{{ form.payment_start_date() }}</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Go" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

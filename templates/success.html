@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1px solid black">
+      <thead>
+        <th>Name</th>
+        <th>Pay Period</th>
+        <th>Gross Income</th>
+        <th>Income Tax</th>
+        <th>Net Income</th>
+        <th>Super Amount</th>
+      </thead>
+      <tbody>
+        <td>{{ form.first_name.data }} {{ form.last_name.data }}</td>
+        <td>{{ form.payment_start_date.data }}</td>
+        <td>{{ gross_income_value }}</td>
+        <td>{{ income_tax_value }}</td>
+        <td>{{ net_income_value }}</td>
+        <td>{{ super_rate_value }}</td>
+      </tbody>
+    </table>
+  </body>
+</html>
