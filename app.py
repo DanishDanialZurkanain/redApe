@@ -38,6 +38,9 @@ def calculate_salary(employee):
 
         employee = Employees.query.filter_by(name = employee_detail['name']).first()
 
+        if len(employee_detail['name']) < 4:
+            abort(406)
+
         if not employee:
             abort(404)
 
